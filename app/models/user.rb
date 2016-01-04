@@ -22,4 +22,16 @@ class User < ActiveRecord::Base
   mount_uploader :image, UserImageUploader
   validates :image, file_size: {less_than: 3.megabytes},
     file_content_type: {allow: ["image/jpeg", "image/png"]}
+
+  def follow other_user
+    active_relationships.create(followed_id: other_user.id)
+  end
+
+  def unfollow other_user
+    active_relationships.find_by(followed_id: other_user.id).destroy
+  end
+
+  def following? other_user
+    following.include?(other_user)
+  end
 end

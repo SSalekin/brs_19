@@ -28,6 +28,8 @@ en:
         success: Successfully approved
         title: Title
     users:
+      destroy:
+        warning: You have successfully deleted an user.
       index:
         delete: Delete
         email: Email
@@ -37,34 +39,35 @@ en:
       show:
         activities: Activities
         my_favorites: My Favorites
-      destroy:
-        warning: You have successfully deleted an user.
+  all_users: Users
   book_form_book_author: Author
   book_form_book_category: Category
   book_form_book_num_of_pages: Number of Pages
   book_form_book_pubish_date: Publish Date
   book_form_book_title: Book
   book_form_submit_button: Submit
+  book_index_create_btn: Add New Book
+  book_index_delete_btn: Delete
+  book_index_edit_btn: Edit
+  book_index_favorite_btn: Add favorite
+  book_index_review_btn: review
+  book_index_status_read_btn: Status
+  book_model_actions: Actions
+  book_model_author: Author
+  book_model_category: Category
+  book_model_number_of_pages: Pages
+  book_model_publish_date: Publish Date
+  book_model_title: Title
   books_new_add_new_book: Add New Book
   books_new_failure_message: Book creation is failed
   books_new_success_message: Book creation is successful
   books_page_title: Book
-  book_model_title: Title
-  book_model_author: Author
-  book_model_publish_date: Publish Date
-  book_model_number_of_pages: Pages
-  book_model_category: Category
-  book_model_actions: Actions
-  book_index_edit_btn: Edit
-  book_index_delete_btn: Delete
-  make_sure: Are You Sure?
-  book_index_create_btn: Add New Book
-  book_index_review_btn: review
-  book_index_favorite_btn: Add favorite
-  book_index_status_read_btn: Status
   contact: Contact
   english: English
   error: error
+  follow: Follow
+  followers: Followers
+  following: Following
   form_contains: The form contains
   framgia: Framgia Bangladesh Ltd.
   hello: Hello world
@@ -78,6 +81,7 @@ en:
       my_profile: My Profile
       requests: Requests
       users: Users
+  make_sure: Are You Sure?
   requests:
     index:
       author: Author
@@ -93,8 +97,8 @@ en:
       title: Request new book
   sign_in: Sign Up
   sign_up: Sign Up
+  unfollow: Unfollow
   user: Welcome User
-  all_users: Users
   users:
     edit:
       title: Update your profile picture

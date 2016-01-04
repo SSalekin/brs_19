@@ -1,0 +1,14 @@
+<div class="followers well" id="followers_div">
+    <button type="button" class="close" id="hide-followers">&times;</button>
+  <hr>
+  <% if @user.followers.any? %>
+    <% @user.followers.each do |follower| %>
+      <p>
+        <%= link_to follower.name, follower %>
+      </p>
+      <hr>
+    <% end %>
+  <% else %>
+    <code><%= t "no_followers" %></code>
+  <% end %>
+</div>

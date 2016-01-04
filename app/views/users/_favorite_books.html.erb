@@ -1,0 +1,7 @@
+<div class="panel-body">
+  <div class="list-group">
+    <% Book.favourited_by(@user).each do |book| %>
+      <%= link_to book.name, admin_book_path(book), class: "list-group-item" %>
+    <% end %>
+  </div>
+</div>

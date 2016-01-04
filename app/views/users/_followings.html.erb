@@ -1,0 +1,14 @@
+<div class="following well" id="following_div">
+    <button type="button" class="close" id="hide-following">&times;</button>
+  <hr>
+  <% if @user.following.any? %>
+    <% @user.following.each do |following| %>
+      <p>
+        <%= link_to following.name, following %>
+      </p>
+      <hr>
+    <% end %>
+  <% else %>
+    <code><%= t "not_following" %></code>
+  <% end %>
+</div>

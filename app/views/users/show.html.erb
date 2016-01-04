@@ -8,21 +8,18 @@
       <div class="panel-heading">
         <h3 class="panel-title"><%= t ".activities" %></h3>
       </div>
-      <div class="panel-body">        
+      <div class="panel-body">
       </div>
     </div>
     <div class="panel panel-info">
       <div class="panel-heading">
         <h3 class="panel-title"><%= t ".my_favorites" %></h3>
       </div>
-      <div class="panel-body">
-        <div class="list-group">
-          <% @user.favorite_books.each do |book| %>
-            <%= link_to book.name, admin_book_path(book), 
-              class: "list-group-item" %>
-          <% end %>
-        </div>
-      </div>
+      <%= render "favorite_books" %>
     </div>
+    <%= render "shared/stats" %>
+    <%= render "follow_form" if user_signed_in? %>
+    <%= render "followers" %>
+    <%= render "followings" %>
   </div>
 </div>
